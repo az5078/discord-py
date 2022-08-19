@@ -1,0 +1,57 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>ab4df2e8-2b6d-4167-94ed-67a6b51de790</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>Discord_bot_py_test.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>Discord_bot_py_test</Name>
+    <RootNamespace>Discord_bot_py_test</RootNamespace>
+    <TestFramework>Pytest</TestFramework>
+    <InterpreterId>Global|PythonCore|3.10</InterpreterId>
+    <SuppressPackageInstallationPrompt>True</SuppressPackageInstallationPrompt>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="commands\attendance_alert\attendance_alert_command.py" />
+    <Compile Include="commands\attendance_alert\attendance_role_delete_command.py" />
+    <Compile Include="commands\attendance_alert\attendance_role_create_command.py" />
+    <Compile Include="commands\PUBG\border_chop.py" />
+    <Compile Include="commands\PUBG\dataframe2image.py" />
+    <Compile Include="commands\poll_command.py" />
+    <Compile Include="Discord_bot_py_test.py" />
+    <Compile Include="commands\PUBG\PUBG_command.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Token.token" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="commands\" />
+    <Folder Include="commands\attendance_alert\" />
+    <Folder Include="commands\PUBG\" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|PythonCore|3.10" />
+    <InterpreterReference Include="Global|PythonCore|3.9" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
