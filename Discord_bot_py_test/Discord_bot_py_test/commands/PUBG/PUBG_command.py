@@ -39,7 +39,7 @@ def distance_calc(location1, location2):
   return math.sqrt((x1-x2)**2 + (y1-y2)**2 + (z1-z2)**2)
 
 header = {
-  "Authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIwMmUxNzczMC1jYzA3LTAxMzgtYjU2My0wNDE0YWVmYjg0MjEiLCJpc3MiOiJnYW1lbG9ja2VyIiwiaWF0IjoxNTk4NjkyOTE4LCJwdWIiOiJibHVlaG9sZSIsInRpdGxlIjoicHViZyIsImFwcCI6InRyaXN0YW4yMzYxMi1nIn0.JJBaPGKlbNIuWdkfzR5ihY6q8RcDPg5Tky0vNtGz2i4",
+  "Authorization": "(My PUBG API Key)",
   "Accept": "application/vnd.api+json"
 }
 
